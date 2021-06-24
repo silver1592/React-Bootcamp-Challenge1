@@ -4,10 +4,13 @@ import { mockPokemonData } from "../mock/pokeData";
 export function PokeCard() {
   return (
     <div>
-      <div>{mockPokemonData.name}</div>
-      <div>{mockPokemonData.sprites.front_default}</div>
-      <div>{mockPokemonData.sprites.front_shiny}</div>
-      <div>{mockPokemonData.video}</div>
+      <h1>{mockPokemonData.name}</h1>
+      <img src={mockPokemonData.sprites.front_default} alt="" />
+      <br />
+      <img src={mockPokemonData.sprites.front_shiny} alt="" />
+      <br />
+      <a href={mockPokemonData.video}>link</a>
+      <br />
     </div>
   );
 }
